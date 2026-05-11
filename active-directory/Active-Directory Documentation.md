@@ -29,61 +29,12 @@ Purpose of OUs:
 ## Users
 Created the following domain user:
 - Thomas Yip
-
-User logon format examples:
-- YATLAB\ThomasY
-- ThomasY@yatlab.local
+- Gabriel Wong
 
 ## Security Groups
 Created the following security group:
 - IT_Admins
-
-Group Configuration:
-- Group Type: Security
-- Group Scope: Global
-
-Purpose:
-- Centralized permission management
-- Role-Based Access Control (RBAC)
-
-## Group Membership
-Added:
-- Thomas Yip
-
-to:
-- IT_Admins
-
-This demonstrates:
-- Group-based permission assignment
-- Enterprise identity management practices
-
-## Domain-Joined Client Machine
-
-Created and configured:
-- CLIENT01
-- Windows 10 Pro virtual machine
-
-CLIENT01 was joined to the:
-- yatlab.local domain
-
-Configuration steps:
-1. Configured CLIENT01 with a static IPv4 address
-2. Set DC01 as the preferred DNS server
-3. Joined CLIENT01 to the yatlab.local domain
-4. Restarted the client machine after domain join
-
-## Domain Authentication Testing
-
-Successfully logged into CLIENT01 using the domain user:
-- YATLAB\ThomasY
-
-## Concepts Learned
-- Difference between Forest, Domain, and Domain Controller
-- Difference between Organizational Units and Security Groups
-- Active Directory authentication structure
-- DNS dependency in Active Directory
-- User and group management
-- Group membership and RBAC concepts
+- HR_Users
 
 ## Current Environment Structure
 
@@ -92,6 +43,8 @@ yatlab.local
 │   ├── Thomas Yip
 │   └── IT_Admins
 ├── HR
+    ├── Gabriel Wong
+│   └── HR_Users
 └── Servers
 
 ## Goal
